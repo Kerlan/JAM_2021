@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Constants.hpp
+
+../include/MakeMap.hpp
+vector
+-
+iostream
+-
+Constants.hpp
+../include/Constants.hpp
+
+/Users/Kerlan/Documents/epitech_2020/JAM_2021/src/MakeMap.cpp
+include/MakeMap.hpp
+/Users/Kerlan/Documents/epitech_2020/JAM_2021/src/include/MakeMap.hpp
+
+/Users/Kerlan/Documents/epitech_2020/JAM_2021/src/main.cpp
+include/MakeMap.hpp
+/Users/Kerlan/Documents/epitech_2020/JAM_2021/src/include/MakeMap.hpp
+

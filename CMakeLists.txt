@@ -6,16 +6,18 @@ set (CMAKE_CXX_STANDARD 11)
 set(CONAN_DISABLE_CHECK_COMPILER ON)
 
 set(NAME_CLIENT 123boom)
-set(INCLUDE_CLIENT "client/include")
+set(INCLUDE_CLIENT "include")
 project(${NAME_CLIENT} LANGUAGES CXX)
 
 set(SRC_CLIENT
-    
-    )
+    src/main.cpp
+    src/MakeMap.cpp
+)
     
 set(HPP_CLIENT
-    
-    )
+    include/MakeMap.hpp
+    include/Constants.hpp
+)
 
 find_package(SFML 2.5.1 COMPONENTS system window graphics network audio)
 
