@@ -62,13 +62,25 @@ void MakeMap::printMap()
 char MakeMap::findObjectInMap(int x, int y)
 {
     int s = 0;
-    int l = x + y;
 
     for (int i = 0; i < this->objects.size(); i++) {
-        if (abs(l - (this->objects[i].first + this->objects[i].second)) < s)
+        if (abs((x + y) - (this->objects[i].first + this->objects[i].second)) < s)
             s = i;
     }
-    return 'M';
+    
+    if (abs(x - this->objects[s].first) > abs(y - this->objects[s].second)) {
+        if ((x - this->objects[s].first) > 0) {
+            return 'R';
+        } else {
+            return 'L';
+        }
+    } else {
+        if ((y - this->objects[s].second) > 0) {
+            return 'B';
+        } else {
+            return 'T';
+        }
+    }
 }
 
 std::vector<std::vector<char>> MakeMap::getMap()
