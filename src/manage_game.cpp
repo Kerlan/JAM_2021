@@ -72,7 +72,7 @@ void game::draw_board()
 
 void game::create_board(void)
 {
-    MakeMap *text_map = new MakeMap(20, 20);
+    text_map = new MakeMap(20, 20);
     map = text_map->map;
     text_map->printMap();
     int pos_x = 0;
@@ -147,10 +147,24 @@ void game::remove_tile()
                 if (tile_board[i][j]->status == 0 || tile_board[i][j]->status == 1) {
                     if (tile_board[i][j]->status == 1) {
                         sound_hover.play();
-                        if (map[i][j] == 'A')
+                        if (map[i][j] == 'A') {
                             tile_board[i][j]->clickOn("img/asteroide.png");
-                        else if (map[i][j] == 'X')
-                            tile_board[i][j]->clickOn("img/empty.png");
+                        if (player == 1)
+                            nb_life1 -= 1;
+                        else
+                            nb_life2 -= 1;
+                        }
+                        if (map[i][j] == 'X') {
+                            char arrow = text_map->findObjectInMap(i, j);
+                            if (arrow == 'R')
+                                tile_board[i][j]->clickOn("img/right.png");
+                            if (arrow == 'B')
+                                tile_board[i][j]->clickOn("img/bottom.png");
+                            if (arrow == 'L')
+                                tile_board[i][j]->clickOn("img/left.png");
+                            if (arrow == 'T')
+                                tile_board[i][j]->clickOn("img/top.png");
+                        } 
                         if (player == 2)
                             player = 1;
                         else
