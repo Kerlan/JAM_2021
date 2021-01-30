@@ -10,13 +10,16 @@ set(INCLUDE_CLIENT "include")
 project(${NAME_CLIENT} LANGUAGES CXX)
 
 set(SRC_CLIENT
-    src/main.cpp
+    src/manage_game.cpp
+    src/tile.cpp
     src/MakeMap.cpp
 )
     
 set(HPP_CLIENT
     include/MakeMap.hpp
     include/Constants.hpp
+    include/manage_game.hpp
+    include/tile.hpp
 )
 
 find_package(SFML 2.5.1 COMPONENTS system window graphics network audio)
