@@ -147,6 +147,10 @@ void game::remove_tile()
                     if (tile_board[i][j]->status == 1) {
                         sound_hover.play();
                         tile_board[i][j]->clickOn("img/empty.png");
+                        if (player == 2)
+                            player = 1;
+                        else
+                            player = 2;
                         return;
                     }
                 }
