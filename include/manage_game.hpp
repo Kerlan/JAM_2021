@@ -45,6 +45,7 @@ class game
         int nb_life1;
         int nb_life2;
         void remove_tile();
+        std::vector<std::vector<char>> map;
 
         // sf::Event event;
         // game_status game_status;

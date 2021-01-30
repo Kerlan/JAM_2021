@@ -45,7 +45,7 @@ void MakeMap::addObjectInMap()
         this->objects.push_back(p);
     }
     for (int i = 0; i < this->objects.size(); i++) {
-        this->map[this->objects[i].first][this->objects[i].second] = i + 49;
+        this->map[this->objects[i].first][this->objects[i].second] = 'A';
     }
 }
 

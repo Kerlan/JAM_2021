@@ -30,9 +30,9 @@ void tile::draw_tile(int player)
         window->draw(*sprite);
     if (status == 2)
         window->draw(*sprite_activate);
-    if (status == 1 && player == 1)
-        window->draw(*sprite_hover_1);
     if (status == 1 && player == 2)
+        window->draw(*sprite_hover_1);
+    if (status == 1 && player == 1)
         window->draw(*sprite_hover_2);
 }
 

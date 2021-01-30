@@ -47,7 +47,7 @@ void game::draw_life()
 
 game::game(void)
 {
-    player = 1;
+    player = 2;
     background = create_sprite("img/background.png");
     background_double = create_sprite("img/background.png");
     title_1 = create_sprite("img/title_1.png");
@@ -73,7 +73,8 @@ void game::draw_board()
 void game::create_board(void)
 {
     MakeMap *text_map = new MakeMap(20, 20);
-    std::vector<std::vector<char>> map = text_map->map;
+    map = text_map->map;
+    text_map->printMap();
     int pos_x = 0;
     int pos_y = 0;
 
@@ -108,7 +109,6 @@ void game::check_hover()
                         sound_hover.play();
                     tile_board[i][j]->status = 1;
                 }
-
             }
             else if (tile_board[i][j]->status == 1)
                 tile_board[i][j]->status = 0;
@@ -135,6 +135,7 @@ void game::move_paralax(void)
 
 void game::remove_tile()
 {
+
     sf::Vector2i cursorPos = sf::Mouse::getPosition(window);
    // (cursorPos.x >= joinPos.x && cursorPos.y >= joinPos.y &&
      //           cursorPos.x <= joinPos.x + joinSize.x && cursorPos.y <= joinPos.y + joinSize.y)
@@ -146,7 +147,10 @@ void game::remove_tile()
                 if (tile_board[i][j]->status == 0 || tile_board[i][j]->status == 1) {
                     if (tile_board[i][j]->status == 1) {
                         sound_hover.play();
-                        tile_board[i][j]->clickOn("img/empty.png");
+                        if (map[i][j] == 'A')
+                            tile_board[i][j]->clickOn("img/asteroide.png");
+                        else if (map[i][j] == 'X')
+                            tile_board[i][j]->clickOn("img/empty.png");
                         if (player == 2)
                             player = 1;
                         else
