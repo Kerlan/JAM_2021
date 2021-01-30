@@ -10,6 +10,7 @@
 MakeMap::MakeMap(int cl, int ln) : cl(cl), ln(ln)
 {
     createMap();
+    addObjectInMap();
 }
 
 MakeMap::~MakeMap()
@@ -27,6 +28,27 @@ void MakeMap::createMap()
     }
 }
 
+void MakeMap::addObjectInMap()
+{
+    std::pair<int, int> p;
+
+    for (int i = 1; i < 6; i++) {
+        p.first = rand() % cl;
+        p.second = rand() % ln;
+        for (int j = 0; j < this->objects.size(); j++) {
+            if (this->objects[j] == p) {
+                j = 0;
+                p.first = rand() % cl;
+                p.second = rand() % ln;
+            }
+        }
+        this->objects.push_back(p);
+    }
+    for (int i = 0; i < this->objects.size(); i++) {
+        this->map[this->objects[i].first][this->objects[i].second] = i + 49;
+    }
+}
+
 void MakeMap::printMap()
 {
     for (int i = 0; i < this->map.size(); i++) {
@@ -35,4 +57,21 @@ void MakeMap::printMap()
         }
         std::cout<<std::endl;
     }
+}
+
+char MakeMap::findObjectInMap(int x, int y)
+{
+    int s = 0;
+    int l = x + y;
+
+    for (int i = 0; i < this->objects.size(); i++) {
+        if (abs(l - (this->objects[i].first + this->objects[i].second)) < s)
+            s = i;
+    }
+    return 'M';
+}
+
+std::vector<std::vector<char>> MakeMap::getMap()
+{
+    return this->map;
 }
