@@ -64,21 +64,21 @@ char MakeMap::findObjectInMap(int x, int y)
     int s = 0;
 
     for (int i = 0; i < this->objects.size(); i++) {
-        if (abs((x + y) - (this->objects[i].first + this->objects[i].second)) < s)
+        if (abs((x + y) - (this->objects[i].first + this->objects[i].second)) < abs((x + y) - (this->objects[s].first + this->objects[s].second)))
             s = i;
     }
     
     if (abs(x - this->objects[s].first) > abs(y - this->objects[s].second)) {
-        if ((x - this->objects[s].first) > 0) {
-            return 'R';
+        if (x > this->objects[s].first) {
+            return 'T';
         } else {
-            return 'L';
+            return 'B';
         }
     } else {
-        if ((y - this->objects[s].second) > 0) {
-            return 'B';
+        if (y > this->objects[s].second) {
+            return 'L';
         } else {
-            return 'T';
+            return 'R';
         }
     }
 }
