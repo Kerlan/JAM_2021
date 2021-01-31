@@ -1,0 +1,3 @@
+/Users/tommy/Documents/TRAVAIL/JAM_2021/build/CMakeFiles/rebuild_cache.dir
+/Users/tommy/Documents/TRAVAIL/JAM_2021/build/CMakeFiles/edit_cache.dir
+/Users/tommy/Documents/TRAVAIL/JAM_2021/build/CMakeFiles/123boom.dir

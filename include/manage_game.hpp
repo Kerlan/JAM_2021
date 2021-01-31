@@ -36,6 +36,7 @@ class game
         sf::Sprite *winscreen;
         sf::Sprite *won_2;
         sf::Sprite *won_1;
+        sf::Sprite *restart;
         void draw_life();
         sf::Sprite *life_2;
         sf::Clock clock_paralax;

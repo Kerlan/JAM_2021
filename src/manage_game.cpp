@@ -57,6 +57,7 @@ game::game(void)
     winscreen = create_sprite("img/winscreen.png");
     won_1 = create_sprite("img/won_1.png");
     won_2 = create_sprite("img/won_2.png");
+    restart = create_sprite("img/restart.png");
     nb_life1 = 3;
     nb_life2 = 3;
 
@@ -75,7 +76,7 @@ void game::draw_board()
 
 void game::create_board(void)
 {
-    text_map = new MakeMap(20, 20);
+    text_map = new MakeMap(15, 15);
     map = text_map->map;
     text_map->printMap();
     int pos_x = 0;
@@ -85,9 +86,7 @@ void game::create_board(void)
         std::vector<tile *> line;
 
         for (int j = 0; j != map[i].size(); j++) {
-           //if (map[i][j] == 'X') {
-                line.push_back(new tile(&window, NORMAL, pos_x +(1440 - 500), pos_y + 400));
-            //}
+            line.push_back(new tile(&window, NORMAL, pos_x +(1440 - 375), pos_y + 500));
             pos_x += 50;
         }
 
