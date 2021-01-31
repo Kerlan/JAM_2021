@@ -58,7 +58,8 @@ game::game(void)
     won_1 = create_sprite("img/won_1.png");
     won_2 = create_sprite("img/won_2.png");
     restart = create_sprite("img/restart.png");
-    nb_life1 = 3;
+    restart_no = create_sprite("img/restart_no.png");
+    nb_life1 = 0;
     nb_life2 = 3;
 
     background->setPosition(0,0);
@@ -78,7 +79,6 @@ void game::create_board(void)
 {
     text_map = new MakeMap(15, 15);
     map = text_map->map;
-    text_map->printMap();
     int pos_x = 0;
     int pos_y = 0;
 
@@ -167,7 +167,7 @@ void game::remove_tile()
                                 tile_board[i][j]->clickOn("img/left.png");
                             if (arrow == 'T')
                                 tile_board[i][j]->clickOn("img/top.png");
-                        } 
+                        }
                         if (player == 2)
                             player = 1;
                         else
@@ -186,8 +186,37 @@ void game::win_screen()
     if (nb_life1 == 0)
         window.draw(*won_2);
     else
-        window.draw(*won_2);
-    
+        window.draw(*won_1);
+    if (hover_status == 0)
+        window.draw(*restart_no);
+    if (hover_status == 1)
+        window.draw(*restart);
+}
+
+void game::check_restart()
+{
+    sf::Vector2i cursorPos = sf::Mouse::getPosition(window);
+    sf::Vector2f buttonPos = restart_no->getPosition();
+
+
+            if (cursorPos.x >= buttonPos.x && cursorPos.y >= buttonPos.y &&
+                cursorPos.x <= buttonPos.x + 450 && cursorPos.y <= buttonPos.y + 132) {
+                if (hover_status == 0)
+                    sound_hover.play();
+                hover_status = 1;
+            }
+            else
+                hover_status = 0;
+}
+
+void game::restart_game()
+{
+    nb_life1 = 3;
+    nb_life2 = 3;
+
+    map.clear();
+    tile_board.clear();
+    create_board();
 }
 
 int game::game_loop()
@@ -202,7 +231,10 @@ int game::game_loop()
     background_double->scale(window_width/4096, window_height/4096);
     winscreen->scale(window_width, window_height);
     background_double->setPosition(window_width, 0);
-
+    won_1->setPosition(window_width/2 - 500, 100);
+    won_2->setPosition(window_width/2 - 500, 100);
+    restart->setPosition(window_width/2 - 225, 650);
+    restart_no->setPosition(window_width/2 - 225, 650);
     create_board();
 
     sf::SoundBuffer buffer;
@@ -238,6 +270,12 @@ int game::game_loop()
                 // sound_good_select.play();
                     remove_tile();
                 }
+            }
+            else if (nb_life1 == 0 || nb_life2 == 0) {
+                if (event.type == sf::Event::MouseButtonReleased) {
+                    restart_game();
+                }
+                check_restart();
             }
         }
         move_paralax();

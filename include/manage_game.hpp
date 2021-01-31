@@ -37,6 +37,7 @@ class game
         sf::Sprite *won_2;
         sf::Sprite *won_1;
         sf::Sprite *restart;
+        sf::Sprite *restart_no;
         void draw_life();
         sf::Sprite *life_2;
         sf::Clock clock_paralax;
@@ -53,6 +54,9 @@ class game
         std::vector<std::vector<char>> map;
         MakeMap *text_map;
         void win_screen();
+        int hover_status;
+        void restart_game();
+        void check_restart();
 
         // sf::Event event;
         // game_status game_status;
