@@ -54,6 +54,9 @@ game::game(void)
     title_2 = create_sprite("img/title_2.png");
     life_1 = create_sprite("img/life_1.png");
     life_2 = create_sprite("img/life_2.png");
+    winscreen = create_sprite("img/winscreen.png");
+    won_1 = create_sprite("img/won_1.png");
+    won_2 = create_sprite("img/won_2.png");
     nb_life1 = 3;
     nb_life2 = 3;
 
@@ -146,15 +149,16 @@ void game::remove_tile()
                 cursorPos.x <= tile_pos.x + 49 && cursorPos.y <= tile_pos.y + 49) {
                 if (tile_board[i][j]->status == 0 || tile_board[i][j]->status == 1) {
                     if (tile_board[i][j]->status == 1) {
-                        sound_hover.play();
                         if (map[i][j] == 'A') {
+                            sound_impact.play();
                             tile_board[i][j]->clickOn("img/asteroide.png");
-                        if (player == 1)
-                            nb_life1 -= 1;
-                        else
-                            nb_life2 -= 1;
+                            if (player == 1)
+                                nb_life1 -= 1;
+                            else
+                                nb_life2 -= 1;
                         }
                         if (map[i][j] == 'X') {
+                            sound_good_select.play();
                             char arrow = text_map->findObjectInMap(i, j);
                             if (arrow == 'R')
                                 tile_board[i][j]->clickOn("img/right.png");
@@ -177,6 +181,16 @@ void game::remove_tile()
     }
 }
 
+void game::win_screen()
+{
+    window.draw(*winscreen);
+    if (nb_life1 == 0)
+        window.draw(*won_2);
+    else
+        window.draw(*won_2);
+    
+}
+
 int game::game_loop()
 {
     int instruction;
@@ -187,16 +201,20 @@ int game::game_loop()
 
     background->scale(window_width/4096, window_height/4096);
     background_double->scale(window_width/4096, window_height/4096);
+    winscreen->scale(window_width, window_height);
     background_double->setPosition(window_width, 0);
 
     create_board();
 
     sf::SoundBuffer buffer;
     sf::SoundBuffer buffer_2;
+    sf::SoundBuffer buffer_3;
     buffer.loadFromFile("img/hover.wav");
     sound_hover.setBuffer(buffer);
     buffer_2.loadFromFile("img/good_select.wav");
     sound_good_select.setBuffer(buffer_2);
+    buffer_3.loadFromFile("img/impact.wav");
+    sound_impact.setBuffer(buffer_3);
     title_1->setPosition(50,window_height/2 - 12);
     title_2->setPosition(window_width - 807, window_height/2 - 12);
     //UDPServerData data;
@@ -206,45 +224,37 @@ int game::game_loop()
     while (window.isOpen()) {
         // data = receiveMove();
         // manage_play->move_player_2(data.id, data.x);
-         while (window.pollEvent(event)) {
+        while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed) {
                 //destroy_objct();
                 window.close();
                 return 1;
             }
-            check_hover();
-        //         current_page_menu = manage_menu->manage_event();
-        //         manage_data_event_menu();
-        //     }
-        if (event.type == sf::Event::MouseButtonReleased) {
-            sound_good_select.play();
-            remove_tile();
+            if (nb_life1 > 0 && nb_life2 > 0) {
+                check_hover();
+            //         current_page_menu = manage_menu->manage_event();
+            //         manage_data_event_menu();
+            //     }
+                if (event.type == sf::Event::MouseButtonReleased) {
+                // sound_good_select.play();
+                    remove_tile();
+                }
+            }
         }
-        //     else if (game_status == GAME) {
-        //         instruction = manage_play->KeyPressed();
-        //         //    manage_play->move_player(data);
-        //         sendMove(instruction);
-        //         sendMoveBis(instruction);
-        //         data = receiveMoveBis();
-        //         manage_play->move_player_2(data.id, data.x);
-        //        // UDPClientData data = {1, instruction, std::to_string(host_status)};
-        //         //_action.push(data);
-        //     }
-        //  //  else if (game_status == WAIT) {
-        //    //         game_status = GAME;
-        //     //}
-         }
-         move_paralax();
+        move_paralax();
         window.clear(sf::Color::Black);
         window.draw(*background);
         window.draw(*background_double);
-        if (player == 2)
+        if (player == 2 && nb_life2 > 0 && nb_life1 > 0)
             window.draw(*title_1);
-        else
+        else if (nb_life1 > 0 && nb_life2 > 0)
             window.draw(*title_2);
         draw_board();
         draw_life();
 
+        if (nb_life1 == 0 || nb_life2 == 0) {
+            win_screen();
+        }
         // if (game_status == MENU || game_status == WAIT)
         //     manage_menu->display_object();
         // if (game_status == GAME) {

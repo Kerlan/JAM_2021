@@ -33,6 +33,9 @@ class game
         sf::Sprite *title_1;
         sf::Sprite *title_2;
         sf::Sprite *life_1;
+        sf::Sprite *winscreen;
+        sf::Sprite *won_2;
+        sf::Sprite *won_1;
         void draw_life();
         sf::Sprite *life_2;
         sf::Clock clock_paralax;
@@ -41,12 +44,14 @@ class game
         float window_width;
         sf::Sound sound_hover;
         sf::Sound sound_good_select;
+        sf::Sound sound_impact;
         int player;
         int nb_life1;
         int nb_life2;
         void remove_tile();
         std::vector<std::vector<char>> map;
         MakeMap *text_map;
+        void win_screen();
 
         // sf::Event event;
         // game_status game_status;
