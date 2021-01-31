@@ -12,6 +12,8 @@
 #include <utility>
 #include <iostream>
 #include "Constants.hpp"
+#include <time.h>
+#include <stdlib.h>
 
 class MakeMap
 {

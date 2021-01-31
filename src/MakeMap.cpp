@@ -31,6 +31,7 @@ void MakeMap::createMap()
 void MakeMap::addObjectInMap()
 {
     std::pair<int, int> p;
+    srand (time(NULL));
 
     for (int i = 1; i < 6; i++) {
         p.first = rand() % cl;
