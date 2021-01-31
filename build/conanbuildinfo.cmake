@@ -38,13 +38,13 @@ endmacro()
 #################
 ###  BOOST
 #################
-set(CONAN_BOOST_ROOT "/Users/tommy/.conan/data/boost/1.71.0/conan/stable/package/a9cc6eae5d6f78d32315168de67d7b9c2b5faf93")
-set(CONAN_INCLUDE_DIRS_BOOST "/Users/tommy/.conan/data/boost/1.71.0/conan/stable/package/a9cc6eae5d6f78d32315168de67d7b9c2b5faf93/include")
-set(CONAN_LIB_DIRS_BOOST "/Users/tommy/.conan/data/boost/1.71.0/conan/stable/package/a9cc6eae5d6f78d32315168de67d7b9c2b5faf93/lib")
+set(CONAN_BOOST_ROOT "/Users/Kerlan/.conan/data/boost/1.71.0/conan/stable/package/a9cc6eae5d6f78d32315168de67d7b9c2b5faf93")
+set(CONAN_INCLUDE_DIRS_BOOST "/Users/Kerlan/.conan/data/boost/1.71.0/conan/stable/package/a9cc6eae5d6f78d32315168de67d7b9c2b5faf93/include")
+set(CONAN_LIB_DIRS_BOOST "/Users/Kerlan/.conan/data/boost/1.71.0/conan/stable/package/a9cc6eae5d6f78d32315168de67d7b9c2b5faf93/lib")
 set(CONAN_BIN_DIRS_BOOST )
 set(CONAN_RES_DIRS_BOOST )
 set(CONAN_SRC_DIRS_BOOST )
-set(CONAN_BUILD_DIRS_BOOST "/Users/tommy/.conan/data/boost/1.71.0/conan/stable/package/a9cc6eae5d6f78d32315168de67d7b9c2b5faf93/")
+set(CONAN_BUILD_DIRS_BOOST "/Users/Kerlan/.conan/data/boost/1.71.0/conan/stable/package/a9cc6eae5d6f78d32315168de67d7b9c2b5faf93/")
 set(CONAN_FRAMEWORK_DIRS_BOOST )
 set(CONAN_LIBS_BOOST boost_wave boost_container boost_contract boost_exception boost_graph boost_iostreams boost_locale boost_log boost_program_options boost_random boost_regex boost_serialization boost_wserialization boost_coroutine boost_context boost_timer boost_thread boost_chrono boost_date_time boost_atomic boost_filesystem boost_system boost_type_erasure boost_log_setup boost_math_c99 boost_math_c99f boost_math_c99l boost_math_tr1 boost_math_tr1f boost_math_tr1l boost_stacktrace_addr2line boost_stacktrace_basic boost_stacktrace_noop boost_unit_test_framework)
 set(CONAN_PKG_LIBS_BOOST boost_wave boost_container boost_contract boost_exception boost_graph boost_iostreams boost_locale boost_log boost_program_options boost_random boost_regex boost_serialization boost_wserialization boost_coroutine boost_context boost_timer boost_thread boost_chrono boost_date_time boost_atomic boost_filesystem boost_system boost_type_erasure boost_log_setup boost_math_c99 boost_math_c99f boost_math_c99l boost_math_tr1 boost_math_tr1f boost_math_tr1l boost_stacktrace_addr2line boost_stacktrace_basic boost_stacktrace_noop boost_unit_test_framework)
@@ -76,13 +76,13 @@ set(CONAN_LIBS_BOOST ${CONAN_PKG_LIBS_BOOST} ${CONAN_SYSTEM_LIBS_BOOST} ${CONAN_
 #################
 ###  SFML
 #################
-set(CONAN_SFML_ROOT "/Users/tommy/.conan/data/sfml/2.5.1/bincrafters/stable/package/3f43b01a25b61b110dd6048fc0d41c08b481c415")
-set(CONAN_INCLUDE_DIRS_SFML "/Users/tommy/.conan/data/sfml/2.5.1/bincrafters/stable/package/3f43b01a25b61b110dd6048fc0d41c08b481c415/include")
-set(CONAN_LIB_DIRS_SFML "/Users/tommy/.conan/data/sfml/2.5.1/bincrafters/stable/package/3f43b01a25b61b110dd6048fc0d41c08b481c415/lib")
+set(CONAN_SFML_ROOT "/Users/Kerlan/.conan/data/sfml/2.5.1/bincrafters/stable/package/3f43b01a25b61b110dd6048fc0d41c08b481c415")
+set(CONAN_INCLUDE_DIRS_SFML "/Users/Kerlan/.conan/data/sfml/2.5.1/bincrafters/stable/package/3f43b01a25b61b110dd6048fc0d41c08b481c415/include")
+set(CONAN_LIB_DIRS_SFML "/Users/Kerlan/.conan/data/sfml/2.5.1/bincrafters/stable/package/3f43b01a25b61b110dd6048fc0d41c08b481c415/lib")
 set(CONAN_BIN_DIRS_SFML )
 set(CONAN_RES_DIRS_SFML )
 set(CONAN_SRC_DIRS_SFML )
-set(CONAN_BUILD_DIRS_SFML "/Users/tommy/.conan/data/sfml/2.5.1/bincrafters/stable/package/3f43b01a25b61b110dd6048fc0d41c08b481c415/")
+set(CONAN_BUILD_DIRS_SFML "/Users/Kerlan/.conan/data/sfml/2.5.1/bincrafters/stable/package/3f43b01a25b61b110dd6048fc0d41c08b481c415/")
 set(CONAN_FRAMEWORK_DIRS_SFML )
 set(CONAN_LIBS_SFML sfml-graphics-s sfml-window-s sfml-network-s sfml-audio-s sfml-system-s)
 set(CONAN_PKG_LIBS_SFML sfml-graphics-s sfml-window-s sfml-network-s sfml-audio-s sfml-system-s)
@@ -114,14 +114,14 @@ set(CONAN_LIBS_SFML ${CONAN_PKG_LIBS_SFML} ${CONAN_SYSTEM_LIBS_SFML} ${CONAN_FRA
 #################
 ###  FREETYPE
 #################
-set(CONAN_FREETYPE_ROOT "/Users/tommy/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7")
-set(CONAN_INCLUDE_DIRS_FREETYPE "/Users/tommy/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/include"
-			"/Users/tommy/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/include/freetype2")
-set(CONAN_LIB_DIRS_FREETYPE "/Users/tommy/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/lib")
-set(CONAN_BIN_DIRS_FREETYPE "/Users/tommy/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/bin")
+set(CONAN_FREETYPE_ROOT "/Users/Kerlan/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7")
+set(CONAN_INCLUDE_DIRS_FREETYPE "/Users/Kerlan/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/include"
+			"/Users/Kerlan/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/include/freetype2")
+set(CONAN_LIB_DIRS_FREETYPE "/Users/Kerlan/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/lib")
+set(CONAN_BIN_DIRS_FREETYPE "/Users/Kerlan/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/bin")
 set(CONAN_RES_DIRS_FREETYPE )
 set(CONAN_SRC_DIRS_FREETYPE )
-set(CONAN_BUILD_DIRS_FREETYPE "/Users/tommy/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/")
+set(CONAN_BUILD_DIRS_FREETYPE "/Users/Kerlan/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/")
 set(CONAN_FRAMEWORK_DIRS_FREETYPE )
 set(CONAN_LIBS_FREETYPE freetype)
 set(CONAN_PKG_LIBS_FREETYPE freetype)
@@ -153,13 +153,13 @@ set(CONAN_LIBS_FREETYPE ${CONAN_PKG_LIBS_FREETYPE} ${CONAN_SYSTEM_LIBS_FREETYPE}
 #################
 ###  STB
 #################
-set(CONAN_STB_ROOT "/Users/tommy/.conan/data/stb/20200203/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9")
-set(CONAN_INCLUDE_DIRS_STB "/Users/tommy/.conan/data/stb/20200203/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include")
+set(CONAN_STB_ROOT "/Users/Kerlan/.conan/data/stb/20200203/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9")
+set(CONAN_INCLUDE_DIRS_STB "/Users/Kerlan/.conan/data/stb/20200203/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include")
 set(CONAN_LIB_DIRS_STB )
 set(CONAN_BIN_DIRS_STB )
 set(CONAN_RES_DIRS_STB )
 set(CONAN_SRC_DIRS_STB )
-set(CONAN_BUILD_DIRS_STB "/Users/tommy/.conan/data/stb/20200203/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/")
+set(CONAN_BUILD_DIRS_STB "/Users/Kerlan/.conan/data/stb/20200203/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/")
 set(CONAN_FRAMEWORK_DIRS_STB )
 set(CONAN_LIBS_STB )
 set(CONAN_PKG_LIBS_STB )
@@ -191,14 +191,14 @@ set(CONAN_LIBS_STB ${CONAN_PKG_LIBS_STB} ${CONAN_SYSTEM_LIBS_STB} ${CONAN_FRAMEW
 #################
 ###  OPENAL
 #################
-set(CONAN_OPENAL_ROOT "/Users/tommy/.conan/data/openal/1.19.1/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f")
-set(CONAN_INCLUDE_DIRS_OPENAL "/Users/tommy/.conan/data/openal/1.19.1/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/include"
-			"/Users/tommy/.conan/data/openal/1.19.1/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/include/AL")
-set(CONAN_LIB_DIRS_OPENAL "/Users/tommy/.conan/data/openal/1.19.1/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/lib")
+set(CONAN_OPENAL_ROOT "/Users/Kerlan/.conan/data/openal/1.19.1/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f")
+set(CONAN_INCLUDE_DIRS_OPENAL "/Users/Kerlan/.conan/data/openal/1.19.1/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/include"
+			"/Users/Kerlan/.conan/data/openal/1.19.1/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/include/AL")
+set(CONAN_LIB_DIRS_OPENAL "/Users/Kerlan/.conan/data/openal/1.19.1/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/lib")
 set(CONAN_BIN_DIRS_OPENAL )
 set(CONAN_RES_DIRS_OPENAL )
 set(CONAN_SRC_DIRS_OPENAL )
-set(CONAN_BUILD_DIRS_OPENAL "/Users/tommy/.conan/data/openal/1.19.1/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/")
+set(CONAN_BUILD_DIRS_OPENAL "/Users/Kerlan/.conan/data/openal/1.19.1/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/")
 set(CONAN_FRAMEWORK_DIRS_OPENAL )
 set(CONAN_LIBS_OPENAL openal)
 set(CONAN_PKG_LIBS_OPENAL openal)
@@ -230,13 +230,13 @@ set(CONAN_LIBS_OPENAL ${CONAN_PKG_LIBS_OPENAL} ${CONAN_SYSTEM_LIBS_OPENAL} ${CON
 #################
 ###  FLAC
 #################
-set(CONAN_FLAC_ROOT "/Users/tommy/.conan/data/flac/1.3.3/_/_/package/e249911590faa7b572092a0ff6b9f36f8555c891")
-set(CONAN_INCLUDE_DIRS_FLAC "/Users/tommy/.conan/data/flac/1.3.3/_/_/package/e249911590faa7b572092a0ff6b9f36f8555c891/include")
-set(CONAN_LIB_DIRS_FLAC "/Users/tommy/.conan/data/flac/1.3.3/_/_/package/e249911590faa7b572092a0ff6b9f36f8555c891/lib")
-set(CONAN_BIN_DIRS_FLAC "/Users/tommy/.conan/data/flac/1.3.3/_/_/package/e249911590faa7b572092a0ff6b9f36f8555c891/bin")
+set(CONAN_FLAC_ROOT "/Users/Kerlan/.conan/data/flac/1.3.3/_/_/package/e249911590faa7b572092a0ff6b9f36f8555c891")
+set(CONAN_INCLUDE_DIRS_FLAC "/Users/Kerlan/.conan/data/flac/1.3.3/_/_/package/e249911590faa7b572092a0ff6b9f36f8555c891/include")
+set(CONAN_LIB_DIRS_FLAC "/Users/Kerlan/.conan/data/flac/1.3.3/_/_/package/e249911590faa7b572092a0ff6b9f36f8555c891/lib")
+set(CONAN_BIN_DIRS_FLAC "/Users/Kerlan/.conan/data/flac/1.3.3/_/_/package/e249911590faa7b572092a0ff6b9f36f8555c891/bin")
 set(CONAN_RES_DIRS_FLAC )
 set(CONAN_SRC_DIRS_FLAC )
-set(CONAN_BUILD_DIRS_FLAC "/Users/tommy/.conan/data/flac/1.3.3/_/_/package/e249911590faa7b572092a0ff6b9f36f8555c891/")
+set(CONAN_BUILD_DIRS_FLAC "/Users/Kerlan/.conan/data/flac/1.3.3/_/_/package/e249911590faa7b572092a0ff6b9f36f8555c891/")
 set(CONAN_FRAMEWORK_DIRS_FLAC )
 set(CONAN_LIBS_FLAC FLAC++ FLAC)
 set(CONAN_PKG_LIBS_FLAC FLAC++ FLAC)
@@ -268,13 +268,13 @@ set(CONAN_LIBS_FLAC ${CONAN_PKG_LIBS_FLAC} ${CONAN_SYSTEM_LIBS_FLAC} ${CONAN_FRA
 #################
 ###  VORBIS
 #################
-set(CONAN_VORBIS_ROOT "/Users/tommy/.conan/data/vorbis/1.3.6/_/_/package/7a0e668ee7200d2e546e87c3c0fd4439ae179913")
-set(CONAN_INCLUDE_DIRS_VORBIS "/Users/tommy/.conan/data/vorbis/1.3.6/_/_/package/7a0e668ee7200d2e546e87c3c0fd4439ae179913/include")
-set(CONAN_LIB_DIRS_VORBIS "/Users/tommy/.conan/data/vorbis/1.3.6/_/_/package/7a0e668ee7200d2e546e87c3c0fd4439ae179913/lib")
+set(CONAN_VORBIS_ROOT "/Users/Kerlan/.conan/data/vorbis/1.3.6/_/_/package/7a0e668ee7200d2e546e87c3c0fd4439ae179913")
+set(CONAN_INCLUDE_DIRS_VORBIS "/Users/Kerlan/.conan/data/vorbis/1.3.6/_/_/package/7a0e668ee7200d2e546e87c3c0fd4439ae179913/include")
+set(CONAN_LIB_DIRS_VORBIS "/Users/Kerlan/.conan/data/vorbis/1.3.6/_/_/package/7a0e668ee7200d2e546e87c3c0fd4439ae179913/lib")
 set(CONAN_BIN_DIRS_VORBIS )
 set(CONAN_RES_DIRS_VORBIS )
 set(CONAN_SRC_DIRS_VORBIS )
-set(CONAN_BUILD_DIRS_VORBIS "/Users/tommy/.conan/data/vorbis/1.3.6/_/_/package/7a0e668ee7200d2e546e87c3c0fd4439ae179913/")
+set(CONAN_BUILD_DIRS_VORBIS "/Users/Kerlan/.conan/data/vorbis/1.3.6/_/_/package/7a0e668ee7200d2e546e87c3c0fd4439ae179913/")
 set(CONAN_FRAMEWORK_DIRS_VORBIS )
 set(CONAN_LIBS_VORBIS vorbisenc vorbisfile vorbis)
 set(CONAN_PKG_LIBS_VORBIS vorbisenc vorbisfile vorbis)
@@ -306,13 +306,13 @@ set(CONAN_LIBS_VORBIS ${CONAN_PKG_LIBS_VORBIS} ${CONAN_SYSTEM_LIBS_VORBIS} ${CON
 #################
 ###  OPENGL
 #################
-set(CONAN_OPENGL_ROOT "/Users/tommy/.conan/data/opengl/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9")
+set(CONAN_OPENGL_ROOT "/Users/Kerlan/.conan/data/opengl/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9")
 set(CONAN_INCLUDE_DIRS_OPENGL )
 set(CONAN_LIB_DIRS_OPENGL )
 set(CONAN_BIN_DIRS_OPENGL )
 set(CONAN_RES_DIRS_OPENGL )
 set(CONAN_SRC_DIRS_OPENGL )
-set(CONAN_BUILD_DIRS_OPENGL "/Users/tommy/.conan/data/opengl/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/")
+set(CONAN_BUILD_DIRS_OPENGL "/Users/Kerlan/.conan/data/opengl/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/")
 set(CONAN_FRAMEWORK_DIRS_OPENGL )
 set(CONAN_LIBS_OPENGL )
 set(CONAN_PKG_LIBS_OPENGL )
@@ -344,13 +344,13 @@ set(CONAN_LIBS_OPENGL ${CONAN_PKG_LIBS_OPENGL} ${CONAN_SYSTEM_LIBS_OPENGL} ${CON
 #################
 ###  BZIP2
 #################
-set(CONAN_BZIP2_ROOT "/Users/tommy/.conan/data/bzip2/1.0.8/conan/stable/package/3c88ad122762d62115d2625c9e8e54c12417952a")
-set(CONAN_INCLUDE_DIRS_BZIP2 "/Users/tommy/.conan/data/bzip2/1.0.8/conan/stable/package/3c88ad122762d62115d2625c9e8e54c12417952a/include")
-set(CONAN_LIB_DIRS_BZIP2 "/Users/tommy/.conan/data/bzip2/1.0.8/conan/stable/package/3c88ad122762d62115d2625c9e8e54c12417952a/lib")
-set(CONAN_BIN_DIRS_BZIP2 "/Users/tommy/.conan/data/bzip2/1.0.8/conan/stable/package/3c88ad122762d62115d2625c9e8e54c12417952a/bin")
+set(CONAN_BZIP2_ROOT "/Users/Kerlan/.conan/data/bzip2/1.0.8/conan/stable/package/3c88ad122762d62115d2625c9e8e54c12417952a")
+set(CONAN_INCLUDE_DIRS_BZIP2 "/Users/Kerlan/.conan/data/bzip2/1.0.8/conan/stable/package/3c88ad122762d62115d2625c9e8e54c12417952a/include")
+set(CONAN_LIB_DIRS_BZIP2 "/Users/Kerlan/.conan/data/bzip2/1.0.8/conan/stable/package/3c88ad122762d62115d2625c9e8e54c12417952a/lib")
+set(CONAN_BIN_DIRS_BZIP2 "/Users/Kerlan/.conan/data/bzip2/1.0.8/conan/stable/package/3c88ad122762d62115d2625c9e8e54c12417952a/bin")
 set(CONAN_RES_DIRS_BZIP2 )
 set(CONAN_SRC_DIRS_BZIP2 )
-set(CONAN_BUILD_DIRS_BZIP2 "/Users/tommy/.conan/data/bzip2/1.0.8/conan/stable/package/3c88ad122762d62115d2625c9e8e54c12417952a/")
+set(CONAN_BUILD_DIRS_BZIP2 "/Users/Kerlan/.conan/data/bzip2/1.0.8/conan/stable/package/3c88ad122762d62115d2625c9e8e54c12417952a/")
 set(CONAN_FRAMEWORK_DIRS_BZIP2 )
 set(CONAN_LIBS_BZIP2 bz2)
 set(CONAN_PKG_LIBS_BZIP2 bz2)
@@ -382,13 +382,13 @@ set(CONAN_LIBS_BZIP2 ${CONAN_PKG_LIBS_BZIP2} ${CONAN_SYSTEM_LIBS_BZIP2} ${CONAN_
 #################
 ###  LIBPNG
 #################
-set(CONAN_LIBPNG_ROOT "/Users/tommy/.conan/data/libpng/1.6.37/_/_/package/16195076b2daf5f9156fd497fd570fda6ec08c17")
-set(CONAN_INCLUDE_DIRS_LIBPNG "/Users/tommy/.conan/data/libpng/1.6.37/_/_/package/16195076b2daf5f9156fd497fd570fda6ec08c17/include")
-set(CONAN_LIB_DIRS_LIBPNG "/Users/tommy/.conan/data/libpng/1.6.37/_/_/package/16195076b2daf5f9156fd497fd570fda6ec08c17/lib")
-set(CONAN_BIN_DIRS_LIBPNG "/Users/tommy/.conan/data/libpng/1.6.37/_/_/package/16195076b2daf5f9156fd497fd570fda6ec08c17/bin")
+set(CONAN_LIBPNG_ROOT "/Users/Kerlan/.conan/data/libpng/1.6.37/_/_/package/16195076b2daf5f9156fd497fd570fda6ec08c17")
+set(CONAN_INCLUDE_DIRS_LIBPNG "/Users/Kerlan/.conan/data/libpng/1.6.37/_/_/package/16195076b2daf5f9156fd497fd570fda6ec08c17/include")
+set(CONAN_LIB_DIRS_LIBPNG "/Users/Kerlan/.conan/data/libpng/1.6.37/_/_/package/16195076b2daf5f9156fd497fd570fda6ec08c17/lib")
+set(CONAN_BIN_DIRS_LIBPNG "/Users/Kerlan/.conan/data/libpng/1.6.37/_/_/package/16195076b2daf5f9156fd497fd570fda6ec08c17/bin")
 set(CONAN_RES_DIRS_LIBPNG )
 set(CONAN_SRC_DIRS_LIBPNG )
-set(CONAN_BUILD_DIRS_LIBPNG "/Users/tommy/.conan/data/libpng/1.6.37/_/_/package/16195076b2daf5f9156fd497fd570fda6ec08c17/")
+set(CONAN_BUILD_DIRS_LIBPNG "/Users/Kerlan/.conan/data/libpng/1.6.37/_/_/package/16195076b2daf5f9156fd497fd570fda6ec08c17/")
 set(CONAN_FRAMEWORK_DIRS_LIBPNG )
 set(CONAN_LIBS_LIBPNG png16)
 set(CONAN_PKG_LIBS_LIBPNG png16)
@@ -420,13 +420,13 @@ set(CONAN_LIBS_LIBPNG ${CONAN_PKG_LIBS_LIBPNG} ${CONAN_SYSTEM_LIBS_LIBPNG} ${CON
 #################
 ###  OGG
 #################
-set(CONAN_OGG_ROOT "/Users/tommy/.conan/data/ogg/1.3.4/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f")
-set(CONAN_INCLUDE_DIRS_OGG "/Users/tommy/.conan/data/ogg/1.3.4/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/include")
-set(CONAN_LIB_DIRS_OGG "/Users/tommy/.conan/data/ogg/1.3.4/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/lib")
+set(CONAN_OGG_ROOT "/Users/Kerlan/.conan/data/ogg/1.3.4/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f")
+set(CONAN_INCLUDE_DIRS_OGG "/Users/Kerlan/.conan/data/ogg/1.3.4/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/include")
+set(CONAN_LIB_DIRS_OGG "/Users/Kerlan/.conan/data/ogg/1.3.4/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/lib")
 set(CONAN_BIN_DIRS_OGG )
 set(CONAN_RES_DIRS_OGG )
 set(CONAN_SRC_DIRS_OGG )
-set(CONAN_BUILD_DIRS_OGG "/Users/tommy/.conan/data/ogg/1.3.4/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/")
+set(CONAN_BUILD_DIRS_OGG "/Users/Kerlan/.conan/data/ogg/1.3.4/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/")
 set(CONAN_FRAMEWORK_DIRS_OGG )
 set(CONAN_LIBS_OGG ogg)
 set(CONAN_PKG_LIBS_OGG ogg)
@@ -458,13 +458,13 @@ set(CONAN_LIBS_OGG ${CONAN_PKG_LIBS_OGG} ${CONAN_SYSTEM_LIBS_OGG} ${CONAN_FRAMEW
 #################
 ###  ZLIB
 #################
-set(CONAN_ZLIB_ROOT "/Users/tommy/.conan/data/zlib/1.2.11/conan/stable/package/af96383df8ed9748d2eed48fb04099c5914a718f")
-set(CONAN_INCLUDE_DIRS_ZLIB "/Users/tommy/.conan/data/zlib/1.2.11/conan/stable/package/af96383df8ed9748d2eed48fb04099c5914a718f/include")
-set(CONAN_LIB_DIRS_ZLIB "/Users/tommy/.conan/data/zlib/1.2.11/conan/stable/package/af96383df8ed9748d2eed48fb04099c5914a718f/lib")
+set(CONAN_ZLIB_ROOT "/Users/Kerlan/.conan/data/zlib/1.2.11/conan/stable/package/af96383df8ed9748d2eed48fb04099c5914a718f")
+set(CONAN_INCLUDE_DIRS_ZLIB "/Users/Kerlan/.conan/data/zlib/1.2.11/conan/stable/package/af96383df8ed9748d2eed48fb04099c5914a718f/include")
+set(CONAN_LIB_DIRS_ZLIB "/Users/Kerlan/.conan/data/zlib/1.2.11/conan/stable/package/af96383df8ed9748d2eed48fb04099c5914a718f/lib")
 set(CONAN_BIN_DIRS_ZLIB )
 set(CONAN_RES_DIRS_ZLIB )
 set(CONAN_SRC_DIRS_ZLIB )
-set(CONAN_BUILD_DIRS_ZLIB "/Users/tommy/.conan/data/zlib/1.2.11/conan/stable/package/af96383df8ed9748d2eed48fb04099c5914a718f/")
+set(CONAN_BUILD_DIRS_ZLIB "/Users/Kerlan/.conan/data/zlib/1.2.11/conan/stable/package/af96383df8ed9748d2eed48fb04099c5914a718f/")
 set(CONAN_FRAMEWORK_DIRS_ZLIB )
 set(CONAN_LIBS_ZLIB z)
 set(CONAN_PKG_LIBS_ZLIB z)
@@ -515,33 +515,33 @@ set(CONAN_CMD_SHARED_LINKER_FLAGS ${CONAN_SHARED_LINKER_FLAGS})
 set(CONAN_CMD_C_FLAGS ${CONAN_C_FLAGS})
 # Defining accumulated conan variables for all deps
 
-set(CONAN_INCLUDE_DIRS "/Users/tommy/.conan/data/boost/1.71.0/conan/stable/package/a9cc6eae5d6f78d32315168de67d7b9c2b5faf93/include"
-			"/Users/tommy/.conan/data/sfml/2.5.1/bincrafters/stable/package/3f43b01a25b61b110dd6048fc0d41c08b481c415/include"
-			"/Users/tommy/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/include"
-			"/Users/tommy/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/include/freetype2"
-			"/Users/tommy/.conan/data/stb/20200203/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"
-			"/Users/tommy/.conan/data/openal/1.19.1/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/include"
-			"/Users/tommy/.conan/data/openal/1.19.1/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/include/AL"
-			"/Users/tommy/.conan/data/flac/1.3.3/_/_/package/e249911590faa7b572092a0ff6b9f36f8555c891/include"
-			"/Users/tommy/.conan/data/vorbis/1.3.6/_/_/package/7a0e668ee7200d2e546e87c3c0fd4439ae179913/include"
-			"/Users/tommy/.conan/data/bzip2/1.0.8/conan/stable/package/3c88ad122762d62115d2625c9e8e54c12417952a/include"
-			"/Users/tommy/.conan/data/libpng/1.6.37/_/_/package/16195076b2daf5f9156fd497fd570fda6ec08c17/include"
-			"/Users/tommy/.conan/data/ogg/1.3.4/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/include"
-			"/Users/tommy/.conan/data/zlib/1.2.11/conan/stable/package/af96383df8ed9748d2eed48fb04099c5914a718f/include" ${CONAN_INCLUDE_DIRS})
-set(CONAN_LIB_DIRS "/Users/tommy/.conan/data/boost/1.71.0/conan/stable/package/a9cc6eae5d6f78d32315168de67d7b9c2b5faf93/lib"
-			"/Users/tommy/.conan/data/sfml/2.5.1/bincrafters/stable/package/3f43b01a25b61b110dd6048fc0d41c08b481c415/lib"
-			"/Users/tommy/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/lib"
-			"/Users/tommy/.conan/data/openal/1.19.1/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/lib"
-			"/Users/tommy/.conan/data/flac/1.3.3/_/_/package/e249911590faa7b572092a0ff6b9f36f8555c891/lib"
-			"/Users/tommy/.conan/data/vorbis/1.3.6/_/_/package/7a0e668ee7200d2e546e87c3c0fd4439ae179913/lib"
-			"/Users/tommy/.conan/data/bzip2/1.0.8/conan/stable/package/3c88ad122762d62115d2625c9e8e54c12417952a/lib"
-			"/Users/tommy/.conan/data/libpng/1.6.37/_/_/package/16195076b2daf5f9156fd497fd570fda6ec08c17/lib"
-			"/Users/tommy/.conan/data/ogg/1.3.4/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/lib"
-			"/Users/tommy/.conan/data/zlib/1.2.11/conan/stable/package/af96383df8ed9748d2eed48fb04099c5914a718f/lib" ${CONAN_LIB_DIRS})
-set(CONAN_BIN_DIRS "/Users/tommy/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/bin"
-			"/Users/tommy/.conan/data/flac/1.3.3/_/_/package/e249911590faa7b572092a0ff6b9f36f8555c891/bin"
-			"/Users/tommy/.conan/data/bzip2/1.0.8/conan/stable/package/3c88ad122762d62115d2625c9e8e54c12417952a/bin"
-			"/Users/tommy/.conan/data/libpng/1.6.37/_/_/package/16195076b2daf5f9156fd497fd570fda6ec08c17/bin" ${CONAN_BIN_DIRS})
+set(CONAN_INCLUDE_DIRS "/Users/Kerlan/.conan/data/boost/1.71.0/conan/stable/package/a9cc6eae5d6f78d32315168de67d7b9c2b5faf93/include"
+			"/Users/Kerlan/.conan/data/sfml/2.5.1/bincrafters/stable/package/3f43b01a25b61b110dd6048fc0d41c08b481c415/include"
+			"/Users/Kerlan/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/include"
+			"/Users/Kerlan/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/include/freetype2"
+			"/Users/Kerlan/.conan/data/stb/20200203/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"
+			"/Users/Kerlan/.conan/data/openal/1.19.1/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/include"
+			"/Users/Kerlan/.conan/data/openal/1.19.1/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/include/AL"
+			"/Users/Kerlan/.conan/data/flac/1.3.3/_/_/package/e249911590faa7b572092a0ff6b9f36f8555c891/include"
+			"/Users/Kerlan/.conan/data/vorbis/1.3.6/_/_/package/7a0e668ee7200d2e546e87c3c0fd4439ae179913/include"
+			"/Users/Kerlan/.conan/data/bzip2/1.0.8/conan/stable/package/3c88ad122762d62115d2625c9e8e54c12417952a/include"
+			"/Users/Kerlan/.conan/data/libpng/1.6.37/_/_/package/16195076b2daf5f9156fd497fd570fda6ec08c17/include"
+			"/Users/Kerlan/.conan/data/ogg/1.3.4/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/include"
+			"/Users/Kerlan/.conan/data/zlib/1.2.11/conan/stable/package/af96383df8ed9748d2eed48fb04099c5914a718f/include" ${CONAN_INCLUDE_DIRS})
+set(CONAN_LIB_DIRS "/Users/Kerlan/.conan/data/boost/1.71.0/conan/stable/package/a9cc6eae5d6f78d32315168de67d7b9c2b5faf93/lib"
+			"/Users/Kerlan/.conan/data/sfml/2.5.1/bincrafters/stable/package/3f43b01a25b61b110dd6048fc0d41c08b481c415/lib"
+			"/Users/Kerlan/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/lib"
+			"/Users/Kerlan/.conan/data/openal/1.19.1/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/lib"
+			"/Users/Kerlan/.conan/data/flac/1.3.3/_/_/package/e249911590faa7b572092a0ff6b9f36f8555c891/lib"
+			"/Users/Kerlan/.conan/data/vorbis/1.3.6/_/_/package/7a0e668ee7200d2e546e87c3c0fd4439ae179913/lib"
+			"/Users/Kerlan/.conan/data/bzip2/1.0.8/conan/stable/package/3c88ad122762d62115d2625c9e8e54c12417952a/lib"
+			"/Users/Kerlan/.conan/data/libpng/1.6.37/_/_/package/16195076b2daf5f9156fd497fd570fda6ec08c17/lib"
+			"/Users/Kerlan/.conan/data/ogg/1.3.4/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/lib"
+			"/Users/Kerlan/.conan/data/zlib/1.2.11/conan/stable/package/af96383df8ed9748d2eed48fb04099c5914a718f/lib" ${CONAN_LIB_DIRS})
+set(CONAN_BIN_DIRS "/Users/Kerlan/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/bin"
+			"/Users/Kerlan/.conan/data/flac/1.3.3/_/_/package/e249911590faa7b572092a0ff6b9f36f8555c891/bin"
+			"/Users/Kerlan/.conan/data/bzip2/1.0.8/conan/stable/package/3c88ad122762d62115d2625c9e8e54c12417952a/bin"
+			"/Users/Kerlan/.conan/data/libpng/1.6.37/_/_/package/16195076b2daf5f9156fd497fd570fda6ec08c17/bin" ${CONAN_BIN_DIRS})
 set(CONAN_RES_DIRS  ${CONAN_RES_DIRS})
 set(CONAN_FRAMEWORK_DIRS  ${CONAN_FRAMEWORK_DIRS})
 set(CONAN_LIBS boost_wave boost_container boost_contract boost_exception boost_graph boost_iostreams boost_locale boost_log boost_program_options boost_random boost_regex boost_serialization boost_wserialization boost_coroutine boost_context boost_timer boost_thread boost_chrono boost_date_time boost_atomic boost_filesystem boost_system boost_type_erasure boost_log_setup boost_math_c99 boost_math_c99f boost_math_c99l boost_math_tr1 boost_math_tr1f boost_math_tr1l boost_stacktrace_addr2line boost_stacktrace_basic boost_stacktrace_noop boost_unit_test_framework sfml-graphics-s sfml-window-s sfml-network-s sfml-audio-s sfml-system-s freetype openal FLAC++ FLAC vorbisenc vorbisfile vorbis bz2 png16 ogg z ${CONAN_LIBS})
@@ -555,18 +555,18 @@ set(CONAN_DEFINES "-DGL_SILENCE_DEPRECATION=1"
 			"-DSTB_TEXTEDIT_KEYTYPE=unsigned"
 			"-DSFML_STATIC" ${CONAN_DEFINES})
 set(CONAN_BUILD_MODULES_PATHS  ${CONAN_BUILD_MODULES_PATHS})
-set(CONAN_CMAKE_MODULE_PATH "/Users/tommy/.conan/data/boost/1.71.0/conan/stable/package/a9cc6eae5d6f78d32315168de67d7b9c2b5faf93/"
-			"/Users/tommy/.conan/data/sfml/2.5.1/bincrafters/stable/package/3f43b01a25b61b110dd6048fc0d41c08b481c415/"
-			"/Users/tommy/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/"
-			"/Users/tommy/.conan/data/stb/20200203/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/"
-			"/Users/tommy/.conan/data/openal/1.19.1/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/"
-			"/Users/tommy/.conan/data/flac/1.3.3/_/_/package/e249911590faa7b572092a0ff6b9f36f8555c891/"
-			"/Users/tommy/.conan/data/vorbis/1.3.6/_/_/package/7a0e668ee7200d2e546e87c3c0fd4439ae179913/"
-			"/Users/tommy/.conan/data/opengl/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/"
-			"/Users/tommy/.conan/data/bzip2/1.0.8/conan/stable/package/3c88ad122762d62115d2625c9e8e54c12417952a/"
-			"/Users/tommy/.conan/data/libpng/1.6.37/_/_/package/16195076b2daf5f9156fd497fd570fda6ec08c17/"
-			"/Users/tommy/.conan/data/ogg/1.3.4/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/"
-			"/Users/tommy/.conan/data/zlib/1.2.11/conan/stable/package/af96383df8ed9748d2eed48fb04099c5914a718f/" ${CONAN_CMAKE_MODULE_PATH})
+set(CONAN_CMAKE_MODULE_PATH "/Users/Kerlan/.conan/data/boost/1.71.0/conan/stable/package/a9cc6eae5d6f78d32315168de67d7b9c2b5faf93/"
+			"/Users/Kerlan/.conan/data/sfml/2.5.1/bincrafters/stable/package/3f43b01a25b61b110dd6048fc0d41c08b481c415/"
+			"/Users/Kerlan/.conan/data/freetype/2.10.1/_/_/package/fc94a3f66e6577fbaed0c0723f7355de1f7f18b7/"
+			"/Users/Kerlan/.conan/data/stb/20200203/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/"
+			"/Users/Kerlan/.conan/data/openal/1.19.1/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/"
+			"/Users/Kerlan/.conan/data/flac/1.3.3/_/_/package/e249911590faa7b572092a0ff6b9f36f8555c891/"
+			"/Users/Kerlan/.conan/data/vorbis/1.3.6/_/_/package/7a0e668ee7200d2e546e87c3c0fd4439ae179913/"
+			"/Users/Kerlan/.conan/data/opengl/system/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/"
+			"/Users/Kerlan/.conan/data/bzip2/1.0.8/conan/stable/package/3c88ad122762d62115d2625c9e8e54c12417952a/"
+			"/Users/Kerlan/.conan/data/libpng/1.6.37/_/_/package/16195076b2daf5f9156fd497fd570fda6ec08c17/"
+			"/Users/Kerlan/.conan/data/ogg/1.3.4/_/_/package/af96383df8ed9748d2eed48fb04099c5914a718f/"
+			"/Users/Kerlan/.conan/data/zlib/1.2.11/conan/stable/package/af96383df8ed9748d2eed48fb04099c5914a718f/" ${CONAN_CMAKE_MODULE_PATH})
 
 set(CONAN_CXX_FLAGS " ${CONAN_CXX_FLAGS}")
 set(CONAN_SHARED_LINKER_FLAGS "-ObjC ${CONAN_SHARED_LINKER_FLAGS}")
@@ -1837,7 +1837,7 @@ function(check_compiler_version)
         if(NOT ${_CHECK_VERSION} VERSION_EQUAL ${_CONAN_VERSION})
             conan_error_compiler_version()
         endif()
-    elseif(CONAN_COMPILER STREQUAL "apple-clang" OR CONAN_COMPILER STREQUAL "sun-cc")
+    elseif(CONAN_COMPILER STREQUAL "apple-clang" OR CONAN_COMPILER STREQUAL "sun-cc" OR CONAN_COMPILER STREQUAL "mcst-lcc")
         conan_split_version(${CONAN_COMPILER_VERSION} CONAN_COMPILER_MAJOR CONAN_COMPILER_MINOR)
         if(NOT ${VERSION_MAJOR}.${VERSION_MINOR} VERSION_EQUAL ${CONAN_COMPILER_MAJOR}.${CONAN_COMPILER_MINOR})
            conan_error_compiler_version()
@@ -1895,7 +1895,9 @@ function(conan_check_compiler)
     # If using VS, verify toolset
     if (CONAN_COMPILER STREQUAL "Visual Studio")
         if (CONAN_SETTINGS_COMPILER_TOOLSET MATCHES "LLVM" OR
-            CONAN_SETTINGS_COMPILER_TOOLSET MATCHES "clang")
+            CONAN_SETTINGS_COMPILER_TOOLSET MATCHES "llvm" OR
+            CONAN_SETTINGS_COMPILER_TOOLSET MATCHES "clang" OR
+            CONAN_SETTINGS_COMPILER_TOOLSET MATCHES "Clang")
             set(EXPECTED_CMAKE_CXX_COMPILER_ID "Clang")
         elseif (CONAN_SETTINGS_COMPILER_TOOLSET MATCHES "Intel")
             set(EXPECTED_CMAKE_CXX_COMPILER_ID "Intel")
